@@ -1,0 +1,36 @@
+{
+  "name": "navigation-helpers",
+  "version": "0.1.0",
+  "description": "Template helpers for Assemble-Navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://criticalmash@github.com/criticalmash/navigation-helpers.git"
+  },
+  "keywords": [
+    "assemble",
+    "navigation",
+    "template",
+    "helper",
+    "handlebars",
+    "static",
+    "site",
+    "generation"
+  ],
+  "author": "John O'Donnell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/criticalmash/navigation-helpers/issues"
+  },
+  "homepage": "https://github.com/criticalmash/navigation-helpers#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "handlebars": "^4.0.5"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  }
+}
