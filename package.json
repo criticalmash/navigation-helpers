@@ -16,11 +16,13 @@
     "template",
     "helper",
     "handlebars",
-    "static",
-    "site",
-    "generation"
+    "static sitegeneration"
   ],
-  "author": "John O'Donnell",
+  "author": {
+    "email": "john@criticalmash.com",
+    "name": "John O'Donnell",
+    "url": "http://criticalmash.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/criticalmash/navigation-helpers/issues"

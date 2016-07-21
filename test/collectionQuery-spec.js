@@ -27,6 +27,8 @@ var compound = [
   {name: 'n', props: {num: 4}},
 ];
 
+var chamberTest = require('./fixtures/chamberTest.json');
+
 describe('collectionQuery', function () {
 
   xit('should respond with empty result set when undefined', function (){
@@ -79,12 +81,12 @@ describe('collectionQuery', function () {
   });
 
   it('should limit the number of array items', function (){
-    var source = '{{#collectionQuery arr limit=\'3\'}}{{name}}{{/collectionQuery}}';
+    var source = '{{#collectionQuery arr limit=\'4\'}}{{name}}{{/collectionQuery}}';
     var template = hbs.compile(source);
     var output = template({arr: alpha});
 
     // console.log(JSON.stringify(output, null, '\t'));
-    expect(output).to.equal('abc');
+    expect(output).to.equal('abcd');
   });
 
   it('should sort an array based on child object value', function (){
@@ -105,7 +107,25 @@ describe('collectionQuery', function () {
     expect(output).to.equal('gfd');
   });
 
-  it('should work with assemble-navigation objects');
+  it('should work with assemble-navigation objects', function () {
+    var source = '{{#collectionQuery navigation.main.items key=\'linkId\' value=\'2016-festival-index\' property=\'items\' sortBy=\'title\' sortDir=\'asc\' limit=\'3\'}}{{linkId}}{{/collectionQuery}}';
+    var template = hbs.compile(source);
+    var output = template({navigation: chamberTest.menus});
+
+    // console.log('menu items', JSON.stringify(chamberTest, null, '\t'));
+    // console.log('helper output', JSON.stringify(output, null, '\t'));
+    expect(output).to.equal('2016-festival-nosh-noon2016-festival-calendar2016-festival-schumann-fantasies');
+  });
+
+  it('should include parent item in result set if desired', function () {
+    var source = '{{#collectionQuery navigation.main.items key=\'linkId\' value=\'about-index\' includeParent=true property=\'items\' sortBy=\'title\'}}{{linkId}} {{/collectionQuery}}';
+    var template = hbs.compile(source);
+    var output = template({navigation: chamberTest.menus});
+
+    // console.log('menu items', JSON.stringify(chamberTest, null, '\t'));
+    // console.log('helper output', JSON.stringify(output, null, '\t'));
+    expect(output).to.equal('about-index about-message-from-the-directors about-staff-board ');
+  });
 
   it('should handle a query inside another query block');
 

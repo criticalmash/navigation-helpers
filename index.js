@@ -2,7 +2,8 @@
 
 
 var helpers = {
-	collectionQuery: require('./lib/collectionquery.js')
+	collectionQuery: require('./lib/collectionquery.js'),
+  breadcrumb: require('./lib/breadcrumb')
 };
 
 
