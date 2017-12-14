@@ -62,6 +62,15 @@ describe('collectionQuery', function () {
     expect(output).to.equal('bcdfg');
   });
 
+  it('should filter an array based on nested object attributes', function (){
+    var source = '{{#collectionQuery arr key=\'props.num\' value=3}}{{name}}{{/collectionQuery}}';
+    var template = hbs.compile(source);
+    var output = template({arr: compound});
+
+    // console.log(JSON.stringify(output, null, '\t'));
+    expect(output).to.equal('h');
+  });
+
   it('should sort an array based on object attributes', function (){
     var source = '{{#collectionQuery arr sortBy=\'type\'}}{{name}}{{/collectionQuery}}';
     var template = hbs.compile(source);

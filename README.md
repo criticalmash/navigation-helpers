@@ -20,11 +20,13 @@ Block helper for querying menus and selecting the children of a submenu. Will cr
 #### Parameters
 * collection (array of menuitems) you want to search. Typically, you'll want to query the top items array of a menu (`navigation.main.items`, `navigation.footer.items`, etc.).
 * key (string): the object property you want to search on.
-* value (string): what that key should equal
+* value (string|number): what that key should equal, this uses strick equals (===) so make sure you're using the same type
 * sortBy (string): optional sorting attribute
 * sortDir (string): optional sort order (asc, desc)
 * property ('string'): determines what is passed to the inner block. If you just want the matching menu item, leave this out. If you want the children menu items of the matching block, use 'items'.
 * includeParent (boolean): When using property, the index page (AKA the parent) is left out of the results by default. Set this to true to include the parent in the items passed to the inner template.
+
+`key` and `sortBy` should be able to use nested property paths ('a.b.c') to access nested hashes. This was added to preform queries on Assemble view collections as well as menu-item collections.
 
 ```html
 <ul class="sidebar-menu">
@@ -65,6 +67,10 @@ app.helpers(require('navigation-helpers'));
 ```
 
 ## Release History
+
+### v0.2.0
+Backward compatible changes to `collectionQuery` helper to give it the ability to filter based on nested properties.
+
 ### v0.1.0
 Beta release. Future releases will likely add new helpers. I'd expect the APIs for existing helpers to remain the same.
 
