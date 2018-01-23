@@ -1,6 +1,6 @@
 {
   "name": "navigation-helpers",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Template helpers for Assemble-Navigation",
   "main": "index.js",
   "scripts": {
