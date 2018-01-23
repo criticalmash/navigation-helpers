@@ -1,0 +1,392 @@
+{
+    "menus": {
+        "main": {
+            "items": [
+                {
+                    "title": "Home",
+                    "url": "/index.html",
+                    "linkId": "index",
+                    "isCurrentPage": true,
+                    "isActive": false,
+                    "data": {
+                        "title": "Home"
+                    },
+                    "items": [],
+                    "menuPath": [
+                        "."
+                    ],
+                    "basename": "index"
+                },
+                {
+                    "title": "Link to PDF",
+                    "url": "/downloads/pdf/salesbrochure.pdf",
+                    "linkId": "sales-brochure-link",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "Link to PDF",
+                        "menu": "main",
+                        "linkId": "sales-brochure-link"
+                    },
+                    "items": [],
+                    "menuPath": [
+                        "salesbrochure"
+                    ],
+                    "basename": "."
+                },
+                {
+                    "title": "Outside Link",
+                    "url": "http://google.com",
+                    "linkId": "outsidelink",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "Outside Link",
+                        "menu": "main",
+                        "linkId": "outsidelink"
+                    },
+                    "items": [],
+                    "menuPath": [
+                        "outsidelink"
+                    ],
+                    "basename": "."
+                },
+                {
+                    "title": "Artists 2016",
+                    "url": "/2016-artists/index.html",
+                    "linkId": "2016-artists-index",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "Chamberfest 2016 Artists"
+                    },
+                    "items": [
+                        {
+                            "title": "Julie Albers",
+                            "url": "/2016-artists/AlbersJulie.html",
+                            "linkId": "2016-artists-albersjulie",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Julie Albers",
+                                "layout": "artist.hbs",
+                                "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2012/04/608x265_Albers_Julie-300x150.jpg"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-artists",
+                                "AlbersJulie"
+                            ],
+                            "basename": "AlbersJulie"
+                        },
+                        {
+                            "title": "Noah Bendix-Balgley",
+                            "url": "/2016-artists/BendixBalgleyNoah.html",
+                            "linkId": "2016-artists-bendixbalgleynoah",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Noah Bendix-Balgley",
+                                "layout": "artist.hbs",
+                                "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2016/02/Noah_BendixBalgley_final-300x150.jpg"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-artists",
+                                "BendixBalgleyNoah"
+                            ],
+                            "basename": "BendixBalgleyNoah"
+                        },
+                        {
+                            "title": "Yehonatan Berick",
+                            "url": "/2016-artists/BerickYehonatan.html",
+                            "linkId": "2016-artists-berickyehonatan",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Yehonatan Berick",
+                                "layout": "artist.hbs",
+                                "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2012/04/BerickYehonatan-300x150.jpg"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-artists",
+                                "BerickYehonatan"
+                            ],
+                            "basename": "BerickYehonatan"
+                        },
+                        {
+                            "title": "Diana Cohen",
+                            "url": "/2016-artists/CohenDiana.html",
+                            "linkId": "2016-artists-cohendiana",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Diana Cohen",
+                                "layout": "artist.hbs",
+                                "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2012/04/CohenDiana2016-300x150.jpg"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-artists",
+                                "CohenDiana"
+                            ],
+                            "basename": "CohenDiana"
+                        },
+                        {
+                            "title": "Franklin Cohen",
+                            "url": "/2016-artists/CohenFranklin.html",
+                            "linkId": "2016-artists-cohenfranklin",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Franklin Cohen",
+                                "layout": "artist.hbs",
+                                "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2012/04/608x265_Cohen_Franklin-300x150.jpg"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-artists",
+                                "CohenFranklin"
+                            ],
+                            "basename": "CohenFranklin"
+                        }
+                    ],
+                    "menuPath": [
+                        "2016-artists"
+                    ],
+                    "basename": "index"
+                },
+                {
+                    "title": "ChamberTest 2016",
+                    "url": "/2016-festival/index.html",
+                    "linkId": "2016-festival-index",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "2016 Festival",
+                        "menu-title": "ChamberTest 2016"
+                    },
+                    "items": [
+                        {
+                            "title": "Program Calendar",
+                            "url": "/2016-festival/calendar.html",
+                            "linkId": "2016-festival-calendar",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Program Calendar"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-festival",
+                                "calendar"
+                            ],
+                            "basename": "calendar"
+                        },
+                        {
+                            "title": "To My Distant Beloved",
+                            "url": "/2016-festival/distant-beloved.html",
+                            "linkId": "2016-festival-distant-beloved",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "To My Distant Beloved",
+                                "layout": "event.hbs",
+                                "ticketurl": "https://chamberfestcleveland.secure.force.com/ticket/#details_a0SG000000PoTeBMAV"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-festival",
+                                "distant-beloved"
+                            ],
+                            "basename": "distant-beloved"
+                        },
+                        {
+                            "title": "Nosh at Noon",
+                            "url": "/2016-festival/nosh-noon.html",
+                            "linkId": "2016-festival-nosh-noon",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Nosh at Noon",
+                                "layout": "event.hbs"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-festival",
+                                "nosh-noon"
+                            ],
+                            "basename": "nosh-noon"
+                        },
+                        {
+                            "title": "Schumann Fantasies",
+                            "url": "/2016-festival/Schumann-Fantasies.html",
+                            "linkId": "2016-festival-schumann-fantasies",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Schumann Fantasies",
+                                "layout": "event.hbs",
+                                "ticketurl": "https://chamberfestcleveland.secure.force.com/ticket/#details_a0SG000000PqBawMAF"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "2016-festival",
+                                "Schumann-Fantasies"
+                            ],
+                            "basename": "Schumann-Fantasies"
+                        }
+                    ],
+                    "menuPath": [
+                        "2016-festival"
+                    ],
+                    "basename": "index"
+                },
+                {
+                    "title": "About",
+                    "url": "/about/index.html",
+                    "linkId": "about-index",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "About ChamberFest Cleveland",
+                        "menu-title": "About"
+                    },
+                    "items": [
+                        {
+                            "title": "Directors’ Message",
+                            "url": "/about/message-from-the-directors.html",
+                            "linkId": "about-message-from-the-directors",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Directors’ Message"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "about",
+                                "message-from-the-directors"
+                            ],
+                            "basename": "message-from-the-directors"
+                        },
+                        {
+                            "title": "Staff / Board",
+                            "url": "/about/staff-board.html",
+                            "linkId": "about-staff-board",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "Staff / Board"
+                            },
+                            "items": [],
+                            "menuPath": [
+                                "about",
+                                "staff-board"
+                            ],
+                            "basename": "staff-board"
+                        }
+                    ],
+                    "menuPath": [
+                        "about"
+                    ],
+                    "basename": "index"
+                },
+                {
+                    "title": "Media",
+                    "url": "/media/index.html",
+                    "linkId": "media-index",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "Media",
+                        "layout": "media.hbs"
+                    },
+                    "items": [
+                        {
+                            "title": "News",
+                            "url": "/media/news/index.html",
+                            "linkId": "media-news-index",
+                            "isCurrentPage": false,
+                            "isActive": false,
+                            "data": {
+                                "title": "News",
+                                "layout": "media.hbs"
+                            },
+                            "items": [
+                                {
+                                    "title": "ChamberFest Cleveland announces details of 2016 ‘Tales and Legends’ concert season (preview)",
+                                    "url": "/media/news/chamberfest-cleveland-announces-details-2016-tales-legends-concert-season-preview.html",
+                                    "linkId": "media-news-chamberfest-cleveland-announces-details-2016-tales-legends-concert-season-preview",
+                                    "isCurrentPage": false,
+                                    "isActive": false,
+                                    "data": {
+                                        "title": "ChamberFest Cleveland announces details of 2016 ‘Tales and Legends’ concert season (preview)",
+                                        "layout": "news.hbs",
+                                        "date": "April 28, 2016",
+                                        "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2015/05/Cha_S5_WebBannerRev-600x250.jpg"
+                                    },
+                                    "items": [],
+                                    "menuPath": [
+                                        "media",
+                                        "news",
+                                        "chamberfest-cleveland-announces-details-2016-tales-legends-concert-season-preview"
+                                    ],
+                                    "basename": "chamberfest-cleveland-announces-details-2016-tales-legends-concert-season-preview"
+                                },
+                                {
+                                    "title": "Press Release",
+                                    "url": "/media/news/press-release.html",
+                                    "linkId": "media-news-press-release",
+                                    "isCurrentPage": false,
+                                    "isActive": false,
+                                    "data": {
+                                        "title": "Press Release",
+                                        "layout": "news.hbs",
+                                        "date": "April 28, 2016",
+                                        "thumbnail": "http://chamberfestcleveland.com/wp-content/uploads/2015/05/Cha_S5_WebBannerRev-600x250.jpg"
+                                    },
+                                    "items": [],
+                                    "menuPath": [
+                                        "media",
+                                        "news",
+                                        "press-release"
+                                    ],
+                                    "basename": "press-release"
+                                }
+                            ],
+                            "menuPath": [
+                                "media",
+                                "news"
+                            ],
+                            "basename": "index"
+                        }
+                    ],
+                    "menuPath": [
+                        "media"
+                    ],
+                    "basename": "index"
+                },
+                {
+                    "title": "Ticket Information",
+                    "url": "/tickets.html",
+                    "linkId": "tickets",
+                    "isCurrentPage": false,
+                    "isActive": false,
+                    "data": {
+                        "title": "Ticket Information"
+                    },
+                    "items": [],
+                    "menuPath": [
+                        ".",
+                        "tickets"
+                    ],
+                    "basename": "tickets"
+                }
+            ],
+            "cwd": "/Users/john/Sites/assemble/gulptests/chambertest",
+            "base": "/Users/john/Sites/assemble/gulptests/chambertest"
+        }
+    },
+    "default": "main"
+}

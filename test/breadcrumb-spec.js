@@ -11,6 +11,7 @@ hbs.registerHelper('breadcrumb', breadcrumb);
 
 var noActivePath = require('./fixtures/chamberTest.json');
 var activePath = require('./fixtures/pathTest.json');
+var indexTest = require('./fixtures/indexTest.json');
 
 describe('breadcrumb', function () {
   it('should return nothing when there is no active path', function () {
@@ -29,5 +30,14 @@ describe('breadcrumb', function () {
 
     // console.log(JSON.stringify(output, null, '\t'));
     expect(output).to.equal('Media News Press Release ');
+  });
+
+  it('should find and render one item for index page', function () {
+    var source = '{{#breadcrumb navigation.main}}{{title}} {{/breadcrumb}}';
+    var template = hbs.compile(source);
+    var output = template({navigation: indexTest.menus});
+
+    console.log(JSON.stringify(output, null, '\t'));
+    expect(output).contains('Chamberfest 2016 Artists');
   });
 });
