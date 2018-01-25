@@ -20,6 +20,7 @@ Block helper for querying menus and selecting the children of a submenu. Will cr
 #### Parameters
 * collection (array of menuitems) you want to search. Typically, you'll want to query the top items array of a menu (`navigation.main.items`, `navigation.footer.items`, etc.).
 * key (string): the object property you want to search on.
+* inlist (string): works like `key` but will inspect teh given array attribute for any matches to `value`
 * value (string|number): what that key should equal, this uses strick equals (===) so make sure you're using the same type
 * sortBy (string): optional sorting attribute
 * sortDir (string): optional sort order (asc, desc)
@@ -67,6 +68,8 @@ app.helpers(require('navigation-helpers'));
 ```
 
 ## Release History
+### v0.3.1
+Backward compatible changes to `collectionQuery` helper to give it the ability to filter by matching array properties using the `inlist` parameter.
 
 ### v0.2.0
 Backward compatible changes to `collectionQuery` helper to give it the ability to filter based on nested properties.

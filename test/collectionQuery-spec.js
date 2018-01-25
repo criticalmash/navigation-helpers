@@ -27,6 +27,11 @@ var compound = [
   {name: 'n', props: {num: 4}},
 ];
 
+var arrayMatch = [
+  {name: 'a', list: ['apple', 'banana', 'cherry']},
+  {name: 'b', list: ['cat', 'dog', 'hamster']}
+];
+
 var chamberTest = require('./fixtures/chamberTest.json');
 
 describe('collectionQuery', function () {
@@ -138,5 +143,12 @@ describe('collectionQuery', function () {
 
   it('should handle a query inside another query block');
 
-    
+  it('should be able to match an array that contains the given value', function () {
+    var source = '{{#collectionQuery items inlist=\'list\' value=\'apple\'}}{{name}}{{/collectionQuery}}';
+    var template = hbs.compile(source);
+    var output = template({items: arrayMatch});
+
+    console.log('array match helper output', JSON.stringify(output, null, '\t'));
+    expect(output).to.equal('a');
+  });
 });
